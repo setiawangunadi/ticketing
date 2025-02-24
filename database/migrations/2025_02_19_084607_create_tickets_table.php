@@ -21,7 +21,7 @@ return new class extends Migration
             //ticket date nullable
             $table->date('ticket_date')->nullable();
             //status default available
-            $table->enum('status', ['available', 'booked', 'redeem'])->default('available');
+            $table->enum('status', ['available', 'booked', 'sold', 'redeem'])->default('available');
             $table->timestamps();
         });
     }
